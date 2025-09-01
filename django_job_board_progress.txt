@@ -1,0 +1,33 @@
+Django Job Board Project - Progress Notes
+
+Date: 2025-09-01
+
+What we did today:
+
+1. Setup Django Project
+   - Created a new Django project and app called 'jobs'.
+   - Configured settings.py (added 'jobs' to INSTALLED_APPS).
+
+2. Custom User Model
+   - Defined a custom User model with a 'role' field (Employer or Student).
+   - Replaced default Django User with AUTH_USER_MODEL.
+
+3. Admin Setup
+   - Created a superuser.
+   - Logged into Django admin panel.
+   - Confirmed admin site is working.
+
+4. Job & Application Models
+   - Created Job model with fields: title, description, location, salary, posted_by, posted_at.
+   - Created Application model with fields: job, student, resume, status, applied_at.
+   - Registered both models in admin.py so they show up in admin dashboard.
+
+5. Database Migration
+   - Ran 'python manage.py makemigrations' and 'python manage.py migrate' to update DB.
+
+6. Admin Testing
+   - Verified Jobs and Applications are visible in admin panel.
+   - Confirmed Employer can post jobs and Students can apply (via admin for now).
+
+Next Step:
+- Build signup/login pages for Employers and Students (separate registration flows).
