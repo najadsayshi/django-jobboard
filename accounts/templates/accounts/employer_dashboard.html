@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Employer Dashboard{% endblock %}
+
+{% block content %}
+<h2>Welcome, {{ request.user.username }}!</h2>
+<p><a href="/jobs/post/">Post a Job</a></p>
+
+<h3>Your Jobs</h3>
+<ul>
+{% for job in request.user.jobs.all %}
+    <li>{{ job.title }} | <a href="/jobs/applications/{{ job.id }}/">View Applications</a></li>
+{% empty %}
+    <li>No jobs posted yet.</li>
+{% endfor %}
+</ul>
+{% endblock %}

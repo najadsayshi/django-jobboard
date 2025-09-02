@@ -1,0 +1,18 @@
+<ul>
+{% for app in applications %}
+  <li>
+    {{ app.student.username }} | Resume: {{ app.resume }} | Status: {{ app.status }}
+    {% if app.status != 'accepted' %}
+      <a href="/jobs/applications/update/{{ app.id }}/accepted/">Accept</a>
+    {% endif %}
+    {% if app.status != 'rejected' %}
+      <a href="/jobs/applications/update/{{ app.id }}/rejected/">Reject</a>
+    {% endif %}
+    {% if app.status != 'reviewed' %}
+      <a href="/jobs/applications/update/{{ app.id }}/reviewed/">Mark Reviewed</a>
+    {% endif %}
+  </li>
+{% empty %}
+  <li>No applications yet.</li>
+{% endfor %}
+</ul>

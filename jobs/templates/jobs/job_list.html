@@ -1,0 +1,13 @@
+<h2>Available Jobs</h2>
+
+<ul>
+{% for job in jobs %}
+  <li>
+    <strong>{{ job.title }}</strong> at {{ job.location }} |
+    Salary: {{ job.salary }} |
+    <a href="/jobs/apply/{{ job.id }}/">Apply</a>
+  </li>
+{% endfor %}
+</ul>
+
+<p><a href="/accounts/dashboard/">Back to Dashboard</a></p>

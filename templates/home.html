@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Najad's Homepage{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to Najad's JOB PORTAL !</h1>
+    <p>Find your dream job or hire the perfect candidate.</p>
+    {% if not request.user.is_authenticated %}
+        <a href="/accounts/login/" class="btn">Login</a>
+        <a href="/accounts/signup/" class="btn btn-primary">Signup</a>
+    {% else %}
+        <a href="/accounts/dashboard/" class="btn btn-primary">Go to Dashboard</a>
+    {% endif %}
+</div>
+
+
+{% endblock %}

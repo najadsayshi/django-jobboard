@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Job List{% endblock %}
+
+{% block content %}
+<h2>Available Jobs</h2>
+<ul>
+{% for job in jobs %}
+    <li>
+        {{ job.title }} - {{ job.location }} - ${{ job.salary }}
+        <a href="/jobs/apply/{{ job.id }}/">Apply</a>
+    </li>
+{% empty %}
+    <li>No jobs available</li>
+{% endfor %}
+</ul>
+{% endblock %}

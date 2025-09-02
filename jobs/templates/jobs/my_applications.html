@@ -1,0 +1,13 @@
+<h2>My Applications</h2>
+
+<ul>
+{% for app in applications %}
+  <li>
+    Job: {{ app.job.title }} | Status: {{ app.status }} | Resume: {{ app.resume }}
+  </li>
+{% empty %}
+  <li>You have not applied to any jobs yet.</li>
+{% endfor %}
+</ul>
+
+<p><a href="/accounts/dashboard/">Back to Dashboard</a></p>
