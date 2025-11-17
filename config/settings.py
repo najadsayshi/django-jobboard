@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wg7at9%docnn!u(-lrhpt7tj12cvar!-a!0ltjx%q*9x+4&$g^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']  # for testing
 
 
@@ -49,7 +49,331 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-]
+]/* Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+nav {
+    background-color: #1f2937;
+    padding: 12px 20px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+nav {
+    background-color: #1f2937;
+    padding: 12px 20px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    opacity: 0.9;
+}
+
+.hero .btn-primary {
+    background-color: #1f2937;
+    color: white;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #1f2937;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+    color: #1f2937;
+}
+
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);/* Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+nav {
+    background-color: #1f2937;
+    padding: 12px 20px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    opacity: 0.9;
+}
+
+.hero .btn-primary {
+    background-color: #1f2937;
+    color: white;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #1f2937;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+    color: #1f2937;
+}
+
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #111827;
+}
+
+.job-card a {
+    color: #3b82f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.job-card a:hover {
+    text-decoration: underline;
+}
+
+}
+
+.job-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #111827;
+}
+
+.job-card a {
+    color: #3b82f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.job-card a:hover {
+    text-decoration: underline;
+}
+
+.hero .btn:hover {
+    opacity: 0.9;
+}
+
+.hero .btn-primary {
+    background-color: #1f2937;
+    color: white;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #1f2937;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+    color: #1f2937;
+}
+
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #111827;
+}
+
+.job-card a {
+    color: #3b82f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.job-card a:hover {
+    text-decoration: underline;
+}
+
 
 
 ROOT_URLCONF = 'config.urls'
